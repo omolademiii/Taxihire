@@ -1,0 +1,184 @@
+body,html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.section-1{
+    width: 100%;
+    height: 85vh;
+    background-image: url(../Img/image\ 1taxibackground-min.png);
+    background-size: cover;
+    margin-top: 78px;
+}
+.section1-background-text{
+
+}
+.section1-background-heading{
+    font-weight: 700;
+    font-size: 70px;
+    padding-top: 16%;
+
+}
+.section1-background-paragraph{
+    font-size: 18px;
+}
+.section3-paragraph{
+    font-weight: 100;
+    font-size: 18px;
+}
+.index-section4{
+    font-size: 20px;
+    text-align: center;
+}
+    
+.section3-heading{
+    font-weight: 400;
+    font-size: 50px;
+}
+.section4-paragraph{
+    font-size: 25px;
+}
+
+.footer-column1-paragraph{
+    
+}
+
+.about-section-1{
+    width: 100%;
+    height: 70vh;
+    background-image: url(../Img/image\ 1taxibackground-min.png);
+    background-size: cover;
+    margin-top: 78px;
+}
+.about-background-text{
+    padding-top: 14%;
+    text-align: center;
+}
+.about-section1-heading{
+    font-weight: 700;
+    font-size: 70px;
+}
+.about-section3-paragraph{
+    font-weight: 100;
+    font-size: 18px;
+}
+.about-section3-heading{
+    font-weight: 400;
+    font-size: 50px;
+}
+.about-section4-paragraph{
+    font-size: 30px;
+    font-family: poppins;
+}
+.about-section-5{
+    width: auto;
+    margin: 0;
+}
+.contact-section-1{
+    width: 100%;
+    height: 70vh;
+    background-image: url(../Img/image\ 1taxibackground-min.png);
+    background-size: cover;
+    margin-top: 78px;
+}
+.contact-background-text{
+    padding-top: 14%;
+    text-align: center;
+}
+.contact-section1-heading{
+    font-weight: 700;
+    font-size: 70px;
+}
+.contact-section3{
+    
+}
+.contact-section3-paragraph{
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.main input[type="checkbox"]{
+    opacity: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .main .nav{
+        position: relative;
+    }
+
+    .main .menu{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    
+    .main .menu .humb{
+        width: 100%;
+        height: 3px;
+        background-color: #ffffff;
+        margin-top: 8px;
+    }
+    
+    .main .hide-nav{
+        display: none;
+    }
+    
+    .main input[type="checkbox"]{
+        position: absolute;
+        right: 25px;
+        z-index: 9999;
+        opacity: 0;
+        width: 20px;
+        height: 20px;
+        top: 30px;
+    }
+    
+    .main input[type="checkbox"]:checked ~ .hide-nav{
+        width: 100%;
+        min-height: 200px;
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        background-color: #000000;
+        position: absolute;
+        top: 78px;
+        right: 0;
+        left: 0;
+    }
+    
+    .main .menu .line1{
+        transform-origin: 0% 0%;
+        transition: .3s ease-in-out;
+    }
+    
+    .main .menu .line2{
+        transition: .4s ease-in-out;
+    }
+    
+    .main .menu .line3{
+        transform-origin: 0% 100%;
+        transition: .2s ease-in-out;
+    }
+    
+    .main input[type="checkbox"]:checked ~ .menu .line1{
+        transform: rotate(48deg);
+    }
+    
+    .main input[type="checkbox"]:checked ~ .menu .line2{
+        transform: scaleY(0);
+    }
+    
+    .main input[type="checkbox"]:checked ~ .menu .line3{
+        transform: rotate(-48deg);
+    }
+}
